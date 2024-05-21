@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moja Strona Osobista</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f8ff;
+            color: #333;
+        }
+        header {
+            background-color: #1e90ff;
+            color: white;
+            padding: 1rem;
+            text-align: center;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #4682b4;
+        }
+        nav a {
+            color: white;
+            padding: 1rem;
+            text-decoration: none;
+            text-transform: uppercase;
+        }
+        nav a:hover {
+            background-color: #87ceeb;
+        }
+        section {
+            padding: 2rem;
+        }
+        .container {
+            max-width: 1200px;
+            margin: auto;
+        }
+        .projects, .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+        .project, .gallery-item {
+            flex: 1 1 calc(33.333% - 1rem);
+            background-color: #f9f9f9;
+            padding: 1rem;
+            border: 1px solid #ddd;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .contact-form {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+            max-width: 600px;
+            margin: auto;
+        }
+        .contact-form input, .contact-form textarea {
+            padding: 0.5rem;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        .contact-form button {
+            padding: 0.5rem;
+            border: none;
+            border-radius: 5px;
+            background-color: #1e90ff;
+            color: white;
+            cursor: pointer;
+        }
+        .contact-form button:hover {
+            background-color: #4682b4;
+        }
+        footer {
+            background-color: #1e90ff;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Witaj na mojej stronie osobistej</h1>
+    </header>
+    <nav>
+        <a href="#about">O mnie</a>
+        <a href="#projects">Projekty</a>
+        <a href="#gallery">Galeria zdjęć</a>
+        <a href="#contact">Kontakt</a>
+    </nav>
+    <section id="about" class="container">
+        <h2>O mnie</h2>
+        <p>Cześć! Jestem [Twoje Imię], pasjonat technologii i programowania. Uwielbiam tworzyć nowoczesne strony internetowe i aplikacje, które pomagają ludziom w codziennym życiu. W wolnym czasie zajmuję się fotografią i podróżami.</p>
+    </section>
+    <section id="projects" class="container">
+        <h2>Projekty</h2>
+        <div class="projects">
+            <div class="project">
+                <h3>Projekt 1</h3>
+                <p>Opis projektu 1. To jest przykładowy opis, który możesz zmienić.</p>
+            </div>
+            <div class="project">
+                <h3>Projekt 2</h3>
+                <p>Opis projektu 2. To jest przykładowy opis, który możesz zmienić.</p>
+            </div>
+            <div class="project">
+                <h3>Projekt 3</h3>
+                <p>Opis projektu 3. To jest przykładowy opis, który możesz zmienić.</p>
+            </div>
+        </div>
+    </section>
+    <section id="gallery" class="container">
+        <h2>Galeria zdjęć</h2>
+        <div class="gallery">
+            <div class="gallery-item">
+                <img src="zdjecie1.jpg" alt="Zdjęcie 1" style="width:100%;">
+            </div>
+            <div class="gallery-item">
+                <img src="zdjecie2.jpg" alt="Zdjęcie 2" style="width:100%;">
+            </div>
+            <div class="gallery-item">
+                <img src="zdjecie3.jpg" alt="Zdjęcie 3" style="width:100%;">
+            </div>
+        </div>
+    </section>
+    <section id="contact" class="container">
+        <h2>Kontakt</h2>
+        <form class="contact-form">
+            <input type="text" name="name" placeholder="Twoje Imię" required>
+            <input type="email" name="email" placeholder="Twój Email" required>
+            <textarea name="message" rows="5" placeholder="Twoja Wiadomość" required></textarea>
+            <button type="submit">Wyślij</button>
+        </form>
+    </section>
+    <footer>
+        <p>&copy; 2024 [Twoje Imię]. Wszelkie prawa zastrzeżone.</p>
+    </footer>
+</body>
+</html>
